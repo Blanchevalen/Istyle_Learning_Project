@@ -1,0 +1,38 @@
+app-navigation-row{
+   
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+    padding:0px 10px 0px 10px;
+    background-color: var(--clr--background-beige);
+    justify-content: center;
+    align-items: center;
+}
+img, p{
+    display: inline;
+
+    text-transform: uppercase;
+
+}
+p{
+    margin-left: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color:var(--clr-nav-text-gray);
+}
+img{
+    width: 20px;
+}
+a{
+    text-decoration: none;
+}
+.navItem{
+    width: 300px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    padding:10px 30px 10px 30px;
+
+}

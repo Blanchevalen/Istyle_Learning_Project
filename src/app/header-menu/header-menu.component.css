@@ -1,0 +1,94 @@
+header {
+    background-color: var(--clr-dark-gray);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0px 16px;
+    position: fixed;
+    z-index: 1000;
+    top:0;
+    left:0;
+    width: 100vw;
+    
+  }
+
+  
+  #menu-icon,
+  #cart-bag-icon,#search-icon,#person-icon {
+    height: 40px;
+    padding: 4px;
+    background-color: var(--clr-light-gray);
+    border-radius: 50%;
+    margin: 14px 0px;
+    color: white;
+  }
+  
+  #cart-bag-icon{
+    margin-right: 14px;
+   
+  }
+
+h3{font-weight: 800;}
+.isDekstop{
+    display: none;
+}
+.active{
+  color:var(--clr-white);
+  background-color: var(--clr-light-gray);
+
+}
+.inactive{
+  color:var(--clr-light-gray)}
+
+ /* Alapstílus az összes menüelemhez */
+.listItem {
+  /* Alap háttérszín és szövegszín */
+  background-color: var(--clr-dark-gray);
+  color: var(--clr-gray);
+}
+
+/* Aktív stílus, amikor az egér az elem felett van */
+.listItem:hover {
+  /* Aktív háttérszín és szövegszín */
+  background-color: var(--clr-light-gray);
+  color: var(--clr-white);
+}
+
+/* Inaktív stílus, amikor az egér egy menüelem felett van */
+
+div:focus-within,div li:hover{
+  color:aqua;
+  
+}
+@media (min-width:768px){
+   .isMobile{ 
+    display: none;
+   }
+   .isDekstop{
+    display: flex;
+    flex-direction: row;
+    color: var(--clr-white);
+    justify-content: center;
+    align-items: center;
+    
+   }
+   header{
+    justify-content: center;
+   }
+   a,ul,li{list-style: none;
+    color: var(--clr-white);}
+    a,li{
+        padding:0px 0.3rem;
+    }
+}
+
+
+
+
+
+
+  
+   
+    
+    

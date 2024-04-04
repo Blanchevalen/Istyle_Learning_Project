@@ -1,0 +1,50 @@
+#cardBox{
+    display:grid;
+    padding:0rem 1rem 0rem 0rem;
+    margin-bottom: 20px;
+}
+#costumerService, #serviceCourier{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 1rem 2rem 1rem;
+    background-color: var(--clr-very-light-gray);
+
+}
+#costumerService{
+    margin-bottom: 20px;
+}
+h3{
+    font-weight: 800;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+}
+a{
+    color:var(--clr-blue);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (min-width:768px){
+    #cardBox{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1.2rem;
+        color:var(--clr-text-gray);
+    }
+    a{
+        font-size: 1.2rem;
+    }
+    #costumerService, #serviceCourier{
+        margin-bottom: 0rem;}
+}
